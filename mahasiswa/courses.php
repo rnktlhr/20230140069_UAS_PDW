@@ -67,7 +67,7 @@ if ($result_courses->num_rows > 0) {
 $conn->close();
 ?>
 
-<div class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white p-8 rounded-xl shadow-lg mb-8">
+<div class="bg-gradient-to-r from-indigo-700 to-purple-600 text-white p-8 rounded-xl shadow-lg mb-8">
     <h1 class="text-3xl font-bold">Cari Praktikum Baru</h1>
     <p class="mt-2 opacity-90">Temukan praktikum yang sesuai dengan minat Anda dan segera daftarkan diri!</p>
 </div>
@@ -96,13 +96,13 @@ $conn->close();
                         <?php else: ?>
                             <form action="courses.php" method="POST">
                                 <input type="hidden" name="course_id" value="<?php echo $course['id']; ?>">
-                                <button type="submit" name="enroll_course" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">
+                                <button type="submit" name="enroll_course" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">
                                     Daftar Sekarang
                                 </button>
                             </form>
                         <?php endif; ?>
                     <?php else: ?>
-                        <a href="../login.php" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">
+                        <a href="../login.php" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-md transition-colors duration-300">
                             Login untuk Daftar
                         </a>
                     <?php endif; ?>
